@@ -1,0 +1,357 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Integrador One</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="#" class="image avatar"><img src="images/avatar.png" alt="" /></a>
+					<h1><strong>Análise Socioeconômica</strong>
+					<h1>Estudo acerca da influência do contexto social no desempenho do jovem na realização do Enem</h1>
+					<!-- crafted by <a href="http://html5up.net">HTML5 UP</a>. --></h1>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+<!-- ################################################################################################################################# -->
+
+			<!-- Página do Projeto -->
+				<section id="two" class="main">
+					<p><span class="image left"><img src="images/about/img1.png" alt="" />
+						
+					<h2>Objetivo do Projeto Integrador</h2>
+					<p>O principal propósito do Projeto Integrador é desenvolver nosso 
+						conhecimento através da utilização das ferramentas e técnicas da 
+						Ciência de Dados, em um tema escolhido pelo grupo para a aplicação. 
+						Com isso, foi escolhido o contexto da educação, e utilizando os 
+						microdados do Enem 2021, para obter insights pela exploração 
+						de dados e visualização da influência do contexto social 
+						com a nota do participante.</p>
+
+					<p>O objetivo deste estudo é realizar análises e visualizações dos 
+						dados que permitem a visualização da situação na qual grande 
+						parte dos jovens da faixa de 17 a 25 anos, se encontram até a
+						realização da prova do Enem, identificando-a pelo desempenho na 
+						prova a partir das ferramentas da Ciência de Dados.</p>
+
+					<blockquote> Para esse portfólio, detalharei somente a minha participação e meu 
+							desenvolvimento escrito e aplicada no trabalho. Abaixo estão os links 
+							para a página para visualização do artigo, incluindo os colaboradores 
+							e o notebook do desenvolvimento do estudo.</blockquote>
+						
+						<ul class="actions">
+							<li><a href="https://fair-perigee-e4e.notion.site/Projeto-Integrador-One-95a6fd2ed1fa40438eaa233cdefc43f7" class="button primary icon brands fa-wpforms" target="_blank">Artigo</a></li>
+							<li><a href="https://www.kaggle.com/datasets/gabrielever/ds-integrador-one" class="button icon brands fa-kaggle" target="_blank">Notebook</a></li>
+						</ul>
+					</section> 
+
+<!-- ################################################################################################################################# -->
+
+					<section>
+						<h2>Problemática</h2>
+						<div class="row">
+							<p>As diferenças socioeconômicas entre alunos estão diretamente 
+								ligadas às diferenças em seu desempenho. Por isso, é importante 
+								uma análise acerca das diferenças do desempenho apresentados 
+								por jovens, utilizando resultados do Enem como métrica, a fim 
+								de auxiliar no problema do elevador social quebrado e garantir 
+								oportunidades de ascensão social iguais para todos.
+							</p>
+						</div>
+				
+						<h2>Metodologia</h2>
+						<div class="row">
+						<p>Os microdados do Enem 2021 estão disponíveis no site do Inep, 
+							ao extraí-los, é necessário preparar um ambiente adequado para 
+							a aplicação dos processos, pois não é possível a sua manipulação 
+							ou tratamento utilizando Excel, ou Google Sheets, por essa razão 
+							a linguagem Python foi escolhida. Pela ausência de um ambiente 
+							local adequado para essa imensa quantidade de dados, a análise 
+							foi realizada no Kaggle, utilizando os benefícios da plataforma 
+							como serviço gratuita (PAS).</p>
+						
+						<p>Os dados possuem valores nulos, e não é por esse motivo 
+							que se deve-se excluir uma linha ou coluna para manter a completude 
+							deles, isso é péssimo e resultara em uma análise parcial no qual 
+							possivelmente provocará em uma visão enviesada.</p>
+
+						<p>Manter a integridade e o controle de acesso a esses dados é fundamental 
+							para não ocorrer o acesso não autorizado e a ameaça se os dados foram 
+							alterados de forma proposital ou acidental, e outros fatores que podem 
+							ocorrer sem o devido controle no ciclo de vida da análise de dados, por 
+							isso a falta de cuidado podem levar a resultados duvidosos e inseguros. 
+							Prezamos em manter a imparcialidade e uma visão completa sobre o ambiente 
+							analisado, pois os dados qualitativos dependem do método interpretativo 
+							para se obter insights, em relação aos dados quantitativos, tem reflexo 
+							em torno da natureza, conclusões e métodos dos diferentes ramos do saber 
+							científico.</p>
+						</div>
+					</section>
+
+<!-- ################################################################################################################################# -->
+					
+					<section>
+						<h2>Desenvolvimento da Análise</h2>
+						
+						<p> Após o tratamento e manipulação de dados, a amostra foi reduzida a 2.470.000 
+							jovens, dos quais 69% foram nos 2 dias de prova, 4,2% não foram ao 1° ou no 
+							2° dia de prova e 26,8% não foram em nenhum dia de prova.</p>
+							
+						<p> Com isso, ao comparar os jovens que não fizeram o Enem em relação ao todo, observa-se que quase metade 
+							dos que não compareceram em nenhum dia da prova são da classe DE (a classe social 
+							mais baixa), representando 12,9% de toda a amostra. Este fato é ilustrado no gráfico abaixo.</p>
+
+						<div class="col-12"><span class="image fit"><img src="/project/integradorone/images/plot/integrador01.png" alt="" /></span></div>
+
+						<p> Esta análise mostra a possibilidade de a nota do Enem estar relacionada à pontuação 
+							que define a classe do indivíduo segundo o IBGE. Dito isso, correlação não é causalidade.</p>
+
+						<p>	No gráfico seguinte, são apresentados o total de inscritos, conforme a pontuação obtida na 
+							classificação da classe social, e deste total, subdivididos entre presentes e ausentes 
+							no exame.</p>
+
+						<p> Destacam-se os ausentes, cuja maioria foi classificada com a menor pontuação de 
+							classe social. Para fins de comparação, incluiu-se as barras cinzas que representam os 
+							presentes no exame, junto das vermelhas que representam os ausentes. Observe que o eixo 
+							horizontal do 2º gráfico apresentado, representa a pontuação obtida no questionário socioeconômico, 
+							ou seja, as barras mais à direita representam os candidatos de classe mais alta, 
+							e à esquerda, de classe mais baixa.</p>
+
+						<div class="col-12"><span class="image fit"><img src="/project/integradorone/images/plot/integrador02.png" alt="" /></span></div>
+						<p>Observando os jovens que não fizeram o Enem, percebe-se 
+							a grande concentração de jovens da classe DE, demonstrando que grande parte do 
+							público inscrito no Enem pertence a esse grupo. Percebe-se também que os 
+							candidatos de classe mais alta são os que mais fizeram a prova, revelando alguma 
+							correlação entre a situação econômica e a ausência desses jovens.</p>
+
+						<p>Em relação à informatização do jovem, percebe-se que a maioria possui internet 
+							e no mínimo um celular, garantindo alguma chance de consumir conteúdo educativo 
+							como preparação para a prova. Entretanto, boa parte não possui um computador, o 
+							que lhes garantiria um meio mais prático e eficiente para estudar.</p>
+
+						<h2>Interferência do contexto social na nota do Enem</h2>
+
+						<p>O próximo gráfico apresenta as médias das notas das matérias por classe, renda familiar e formação 
+							dos pais ou responsáveis. Além disso, apresenta a contagem de indivíduos de cada classe 
+							e a contagem da formação dos pais ou responsáveis. Assim é possível visualizar o desempenho 
+							de cada classe em cada matéria do Enem e também traçar uma conexão com o grau de formação 
+							de seus pais.</p>
+
+						<div class="col-12"><span class="image fit"><img src="/project/integradorone/images/plot/integrador03.png" alt="" /></span></div>
+
+						<div class="table-wrapper">
+							<table class="alt">
+								<thead>
+									<tr>
+										<th>Simbolo</th>
+										<th>Descrição</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>N</td>
+										<td>Nunca estudou</td>
+									</tr>
+									<tr>
+										<td>I</td>
+										<td>Incompleto até 5º ano</td>
+									</tr>
+									<tr>
+										<td>5º</td>
+										<td>Completou até o 5º ano</td>
+									</tr>
+									<tr>
+										<td>9º</td>
+										<td>Completou até o 9º ano</td>
+									</tr>
+									<tr>
+										<td>M</td>
+										<td>Completou até o Ensino Médio.</td>
+									</tr>
+									<tr>
+										<td>G</td>
+										<td>Completou a Graduação</td>
+									</tr>
+									<tr>
+										<td>P</td>
+										<td>Completou a Pós-graduação</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td colspan="2"></td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+
+
+						<p> Boa parte dos candidatos do Enem possuem pais que não chegaram a completar, ou sequer 
+							efetuar, o ensino superior. Como visto no primeiro gráfico, mais de 70% dos jovens que fizeram 
+							o Enem estão dentro das 3 classes mais baixas, e percebe-se no 3º gráfico que as médias 
+							das notas pela sua renda familiar mensal máxima tendem a crescer junto com a renda, o 
+							mesmo com a classe.</p>
+
+						<p> A maioria dos jovens situa-se entre as classes DE e B2, e a maioria dos pais ou 
+							responsáveis completou até o ensino médio, como mostra o gráfico de colunas no 
+							canto inferior direito do gráfico anterior.</p>
+							
+						<p> O gráfico abaixo apresenta a situação da presença no Enem de acordo com o grau de formação 
+							dos pais dos alunos. Deste modo é possível observar como a situação dos pais afeta 
+							a mentalidade do jovem.</p>
+
+						<div class="col-12"><span class="image fit"><img src="/project/integradorone/images/plot/integrador04.png" alt="" /></span></div>
+
+						<p> Ao analisar a situação apresentada acima, percebe-se que os jovens que não realizaram a prova, 
+							cujos pais ou responsáveis não concluíram o ensino médio, representam cerca de um terço 
+							dos respectivos totais. Em comparação, aqueles que possuem no mínimo o ensino médio não 
+							chegam a 25% e aqueles cujos pais possuem uma graduação representam menos de 15%.</p>
+
+						<p> Em hipótese, os jovens que não compareceram no dia da prova não sentem a necessidade 
+							de ingressar em alguma faculdade, possivelmente espelhando-se em seus pais. Esses 
+							mesmos jovens podem ter sido pressionados a procurar um emprego, seja pela sua idade 
+							avançada ou pela necessidade de adquirir melhores condições rápidas para si ou para 
+							sua família. Em comparação, pais ou responsáveis que possuem uma formação superior, 
+							incentivam o seus filhos a seguirem o mesmo caminho que eles, resultando em uma baixa 
+							ausência desses jovens.</p>
+
+						<h2>Análise de notas e classes sociais</h2>
+
+						<p> De acordo com no 3º gráfico, as médias das notas pelas classes situam-se entre 450 e 750. 
+							As notas acima de 700, que representam um provável ingresso em alguma universidade, 
+							foram alcançadas pela minoria de classe mais alta. As classes A, B1 e B2, são 
+							predominantes nas notas de Matemática e Ciências da Natureza, que possuem um grande 
+							valor para o ingresso na universidade.</p>
+						
+						<p> O gráfico a seguir, ainda sobre o assunto de notas, mostra a quantidade de notas acima de 
+							700 e abaixo de 600 nas disciplinas de Ciências da Natureza, Matemática, Linguagens 
+							e Seus Códigos e Ciências Humanas, separadas por classe social, e a proporção dos 
+							tipos de escola que esses jovens frequentaram.</p>
+
+						<div class="col-12"><span class="image fit"><img src="/project/integradorone/images/plot/integrador05.png" alt="" /></span></div>
+
+						<p> Evidentemente, as escolas privadas oferecem uma melhor educação ao jovem, visto 
+							que possuem uma maior proporção sobre as boas notas, mesmo que grande parte dos 
+							jovens não tenha respondido. Já para as notas até 600 as escolas públicas 
+							representam 42,3% do total. Assim, entende-se que somente o ensino dessas escolas 
+							não é o suficiente para seus alunos ingressarem em uma universidade. Certamente 
+							os 5,4% que estudaram em escola pública e os jovens da classe DE que chegaram a 
+							tirar uma nota aceitável para o ingresso em uma universidade tiveram que se 
+							esforçar muito mais na preparação para a prova, apenas para se igualar aos 
+							jovens das classes B2, B1 e A de escolas privadas.</p>
+
+						<h2>Considerações Finais</h2>
+
+						<p> Foi preservada a integridade dos dados para a realização dos processos de 
+							tratamento necessários a fim de obter resultados assertivos. Assim, foi 
+							realizada com êxito a análise e a visualização da influência que o contexto 
+							social vivenciado pelo jovem tem sobre seu desempenho no Enem, visto que grande 
+							parte dessa influência é em decorrência de fatores familiares como a classe social 
+							e a formação do responsável legal. Diante disso, esses fatores contribuem para a 
+							ausência desses jovens no ensino superior, com isso, o objetivo da pesquisa foi 
+							atingido.</p>
+
+						<p> Diante da metodologia de ciência de dados, foi possível a obtenção de respostas 
+							assertivas e a capacidade de replicação do estudo. Utilizando a linguagem Python 
+							e a capacidade computacional oferecida pelo ambiente em nuvem Kaggle, foi possível 
+							a manipulação e o tratamento de dados suficientes para a realização do estudo. 
+							Com isso, foi possível mantê-los íntegros, evitar resultados errôneos, e 
+							discrepâncias na visualização desses dados para a obtenção das devidas respostas. 
+							Nesta análise, os dados estão limitados a jovens brasileiros de 17 a 25 anos que 
+							representam a maioria do público do Enem, porém não estão incluídos jovens de 26 
+							a 29 anos e idades mais avançadas; por isso, é importante a atenção que a análise 
+							não é referente a todos os inscritos no Enem.</p>
+
+						<ul class="actions">
+							<li><a href="https://fair-perigee-e4e.notion.site/Projeto-Integrador-One-95a6fd2ed1fa40438eaa233cdefc43f7" class="button icon brands fa-wpforms" target="_blank">Artigo</a></li>
+							<li><a href="/index.html" class="button icon fa fa-compass">Início</a></li>
+						</ul>
+					</section>
+
+<!-- ################################################################################################################################# -->
+
+				<!-- Three -->
+					<section id="three">
+						<h2>Contato</h2>
+						<p>Obrigado pelo seu interesse nesse projeto, caso queira entrar em contato com 
+							alguns dos integrantes do projeto, no artigo está presente os contatos.</p>
+							<div class="row">
+							<div class="col-4 col-12-small">
+								<ul class="labeled-icons">
+								
+								<!-- Links e Contato -->
+									<li><h3 class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></h3>
+										<a href="https://www.linkedin.com/in/gabrielluizone" target="_blank">Profissional</a></li>
+
+									<li><h3 class="icon brands fa-medium"><span class="label">Medium</span></h3>
+										<a href="https://medium.com/@gabrielluizone" target="_blank">Profissional</a></li>
+
+									<li><h3 class="icon brands fa-github"><span class="label">GitHub</span></h3>
+										<a href="https://github.com/gabrielluizone" target="_blank">Projetos</a></li>
+
+									<li><h3 class="icon brands fa-twitter"><span class="label">Twitter</span></h3>
+										<a href="https://twitter.com/gabrielluizover" target="_blank">Pessoal</a></li>
+
+									<li><h3 class="icon brands fa-unsplash"><span class="label">Unsplash</span></h3>
+										<a href="https://unsplash.com/@gabrielluizone" target="_blank">Lazer</a></li>
+
+									<li><h3 class="icon solid fa-globe"><span class="label">LinkTree</span></h3>
+										<a href="https://linktr.ee/gabrielluizone" target="_blank">LinkTree</a></li>
+										
+								</ul>
+							</div>
+					
+							<div class="col-4 col-12-small">
+								<ul class="labeled-icons">
+
+								<!-- Links e Contato -->	
+									<li><h3 class="icon solid fa-location-arrow"><span class="label">Address</span></h3>
+										11454-320<br/>Guarujá, SP<br/>Brasil</li>
+
+									<li><h3 class="icon solid fa-mobile"><span class="label">Phone</span></h3>
+										<a href="https://wa.me/5513997948338" target="_blank">+55 (13) 9 99794-8338</a></li>
+
+									<li><h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
+										<a href="mailto:gabrielluizone@gmail.com" target="_blank">gabrielluizone@gmail.com<br />
+										<a href="mailto:gabriel.silva637@fatec.sp.gov.br" target="_blank">gabriel.silva637@fatec.sp.gov.br</a></li>
+
+									<li><h3 class="icon solid fa-school"><span class="label">Email</span></h3>
+										<a href="https://fatecrl.edu.br/" target="_blank">Fatec Baixada Santista</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+				</div>
+
+<!-- ################################################################################################################################# -->
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://github.com/gabrielluizone" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="https://medium.com/@gabrielluizone" target="_blank" class="icon brands fa-medium"><span class="label">Medium</span></a></li>
+						<li><a href="https://www.linkedin.com/in/gabrielluizone/" target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="mailto:gabrielluizone@gmail.com" target="_blank" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy;gabrielluizone</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer> <!-- Script -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+	</body>
+</html>
