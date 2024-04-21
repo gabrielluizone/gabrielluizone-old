@@ -1,4 +1,4 @@
 //
 setTimeout(() => {
-  window.location.href = "https://gabrielluizone.super.site/";
+  window.location.href = "";
 }, 0); // Tempo em milissegundos
